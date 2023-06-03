@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-TeacherLoanBoxProject-87CA300E-147A-438A-ACE8-CA4F392501E1</UserSecretsId>
+    <StartupObject>TeacherLoanBoxProject.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20221203103249_AddStatusType2ToDb.cs" />
+    <Compile Remove="Migrations\20221203103249_AddStatusType2ToDb.Designer.cs" />
+    <Compile Remove="Migrations\20221203111913_AddForegnKey.cs" />
+    <Compile Remove="Migrations\20221203111913_AddForegnKey.Designer.cs" />
+    <Compile Remove="Migrations\20221215075727_schoolIdIdentity.cs" />
+    <Compile Remove="Migrations\20221215075727_schoolIdIdentity.Designer.cs" />
+    <Compile Remove="Migrations\20221215075848_schoolIdIdentity.cs" />
+    <Compile Remove="Migrations\20221215075848_schoolIdIdentity.Designer.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="6.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="toastr" Version="2.1.1" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\Pictures\" />
+  </ItemGroup>
+
+</Project>
